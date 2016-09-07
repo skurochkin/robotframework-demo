@@ -1,0 +1,5 @@
+pybot -d results tests (run all tests)
+pybot -d results -N "Full Regression" tests  (run full regression)
+pybot -N "Single Test Case" -d results -t "Test case 1" "tests/product 1/web/featureone.robot" (run specific tests)
+pybot -N "Single Test Case" -d results -i CurrentTestCase -i "some other tag "tests (run test with specific tag, you can use as many tags as you want)
+
