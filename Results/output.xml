@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20160906 13:50:00.604" generator="Robot 3.0 (Python 2.7.12 on win32)">
-<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\amazon.robot" id="s1" name="Amazon">
-<test id="s1-t1" name="User must sign in to check out">
+<robot generated="20160906 15:37:02.675" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests" id="s1" name="Tests">
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Amazon.robot" id="s1-s1" name="Amazon">
+<test id="s1-s1-t1" name="User must sign in to check out">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>http://www.amazon.com</arg>
 <arg>ie</arg>
 </arguments>
-<msg timestamp="20160906 13:50:00.930" level="INFO">Opening browser 'ie' to base url 'http://www.amazon.com'</msg>
-<status status="PASS" endtime="20160906 13:50:06.380" starttime="20160906 13:50:00.929"></status>
+<msg timestamp="20160906 15:37:03.323" level="INFO">Opening browser 'ie' to base url 'http://www.amazon.com'</msg>
+<status status="PASS" endtime="20160906 15:37:09.891" starttime="20160906 15:37:03.323"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Your Amazon.com</arg>
 </arguments>
-<status status="PASS" endtime="20160906 13:50:06.583" starttime="20160906 13:50:06.381"></status>
+<status status="PASS" endtime="20160906 15:37:10.097" starttime="20160906 15:37:09.892"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -24,16 +25,16 @@
 <arg>id=twotabsearchtextbox</arg>
 <arg>Ferrari 458</arg>
 </arguments>
-<msg timestamp="20160906 13:50:06.584" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'</msg>
-<status status="PASS" endtime="20160906 13:51:02.364" starttime="20160906 13:50:06.584"></status>
+<msg timestamp="20160906 15:37:10.097" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'</msg>
+<status status="PASS" endtime="20160906 15:38:05.894" starttime="20160906 15:37:10.097"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input</arg>
 </arguments>
-<msg timestamp="20160906 13:51:02.365" level="INFO">Clicking button 'css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input'.</msg>
-<status status="PASS" endtime="20160906 13:51:02.985" starttime="20160906 13:51:02.365"></status>
+<msg timestamp="20160906 15:38:05.895" level="INFO">Clicking button 'css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input'.</msg>
+<status status="PASS" endtime="20160906 15:38:06.509" starttime="20160906 15:38:05.895"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
@@ -42,31 +43,266 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20160906 13:51:08.283" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20160906 13:51:08.284" starttime="20160906 13:51:08.010"></status>
+<msg timestamp="20160906 15:38:12.169" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20160906 15:38:12.169" starttime="20160906 15:38:11.912"></status>
 </kw>
-<msg timestamp="20160906 13:51:08.286" level="FAIL">Text 'results for "Ferrari 458"' did not appear in 5 seconds</msg>
-<status status="FAIL" endtime="20160906 13:51:08.286" starttime="20160906 13:51:02.986"></status>
+<msg timestamp="20160906 15:38:12.172" level="FAIL">Text 'results for "Ferrari 458"' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20160906 15:38:12.173" starttime="20160906 15:38:06.509"></status>
 </kw>
 <doc>This is some basic info about the test</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="FAIL" endtime="20160906 13:51:08.286" critical="yes" starttime="20160906 13:50:00.929">Text 'results for "Ferrari 458"' did not appear in 5 seconds</status>
+<status status="FAIL" endtime="20160906 15:38:12.173" critical="yes" starttime="20160906 15:37:03.322">Text 'results for "Ferrari 458"' did not appear in 5 seconds</status>
 </test>
 <doc>This is some basic info about the whole suite</doc>
-<status status="FAIL" endtime="20160906 13:51:08.288" starttime="20160906 13:50:00.609"></status>
+<status status="FAIL" endtime="20160906 15:38:12.176" starttime="20160906 15:37:02.734"></status>
+</suite>
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product1" id="s1-s2" name="Product1">
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product1\API" id="s1-s2-s1" name="API">
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product1\API\FeatureOne.robot" id="s1-s2-s1-s1" name="FeatureOne">
+<test id="s1-s2-s1-s1-t1" name="Test case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 1 of API feature 1</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.186" level="INFO">I am test case 1 of API feature 1</msg>
+<status status="PASS" endtime="20160906 15:38:12.186" starttime="20160906 15:38:12.186"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.187" critical="yes" starttime="20160906 15:38:12.185"></status>
+</test>
+<test id="s1-s2-s1-s1-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 2 of API feature 1</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.189" level="INFO">I am test case 2 of API feature 1</msg>
+<status status="PASS" endtime="20160906 15:38:12.189" starttime="20160906 15:38:12.188"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.189" critical="yes" starttime="20160906 15:38:12.187"></status>
+</test>
+<status status="PASS" endtime="20160906 15:38:12.190" starttime="20160906 15:38:12.184"></status>
+</suite>
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product1\API\FeatureTwo.robot" id="s1-s2-s1-s2" name="FeatureTwo">
+<test id="s1-s2-s1-s2-t1" name="Test case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 1 of API feature 2</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.195" level="INFO">I am test case 1 of API feature 2</msg>
+<status status="PASS" endtime="20160906 15:38:12.195" starttime="20160906 15:38:12.194"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.195" critical="yes" starttime="20160906 15:38:12.194"></status>
+</test>
+<test id="s1-s2-s1-s2-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 2 of API feature 2</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.197" level="INFO">I am test case 2 of API feature 2</msg>
+<status status="PASS" endtime="20160906 15:38:12.197" starttime="20160906 15:38:12.197"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.198" critical="yes" starttime="20160906 15:38:12.196"></status>
+</test>
+<status status="PASS" endtime="20160906 15:38:12.199" starttime="20160906 15:38:12.191"></status>
+</suite>
+<status status="PASS" endtime="20160906 15:38:12.200" starttime="20160906 15:38:12.182"></status>
+</suite>
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product1\Web" id="s1-s2-s2" name="Web">
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product1\Web\FeatureOne.robot" id="s1-s2-s2-s1" name="FeatureOne">
+<test id="s1-s2-s2-s1-t1" name="Test case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 1 of Web feature 1</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.208" level="INFO">I am test case 1 of Web feature 1</msg>
+<status status="PASS" endtime="20160906 15:38:12.208" starttime="20160906 15:38:12.208"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.208" critical="yes" starttime="20160906 15:38:12.207"></status>
+</test>
+<test id="s1-s2-s2-s1-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 2 of Web feature 1</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.210" level="INFO">I am test case 2 of Web feature 1</msg>
+<status status="PASS" endtime="20160906 15:38:12.210" starttime="20160906 15:38:12.209"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.210" critical="yes" starttime="20160906 15:38:12.209"></status>
+</test>
+<status status="PASS" endtime="20160906 15:38:12.211" starttime="20160906 15:38:12.205"></status>
+</suite>
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product1\Web\FeatureTwo.robot" id="s1-s2-s2-s2" name="FeatureTwo">
+<test id="s1-s2-s2-s2-t1" name="Test case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 1 of Web feature 2</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.218" level="INFO">I am test case 1 of Web feature 2</msg>
+<status status="PASS" endtime="20160906 15:38:12.218" starttime="20160906 15:38:12.217"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.219" critical="yes" starttime="20160906 15:38:12.217"></status>
+</test>
+<test id="s1-s2-s2-s2-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 2 of Web feature 2</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.221" level="INFO">I am test case 2 of Web feature 2</msg>
+<status status="PASS" endtime="20160906 15:38:12.221" starttime="20160906 15:38:12.221"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.222" critical="yes" starttime="20160906 15:38:12.220"></status>
+</test>
+<status status="PASS" endtime="20160906 15:38:12.223" starttime="20160906 15:38:12.213"></status>
+</suite>
+<status status="PASS" endtime="20160906 15:38:12.224" starttime="20160906 15:38:12.202"></status>
+</suite>
+<status status="PASS" endtime="20160906 15:38:12.226" starttime="20160906 15:38:12.179"></status>
+</suite>
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product2" id="s1-s3" name="Product2">
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product2\API" id="s1-s3-s1" name="API">
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product2\API\FeatureOne.robot" id="s1-s3-s1-s1" name="FeatureOne">
+<test id="s1-s3-s1-s1-t1" name="Test case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 1 of API feature 1</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.234" level="INFO">I am test case 1 of API feature 1</msg>
+<status status="PASS" endtime="20160906 15:38:12.234" starttime="20160906 15:38:12.234"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.234" critical="yes" starttime="20160906 15:38:12.233"></status>
+</test>
+<test id="s1-s3-s1-s1-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 2 of API feature 1</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.236" level="INFO">I am test case 2 of API feature 1</msg>
+<status status="PASS" endtime="20160906 15:38:12.236" starttime="20160906 15:38:12.236"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.236" critical="yes" starttime="20160906 15:38:12.235"></status>
+</test>
+<status status="PASS" endtime="20160906 15:38:12.237" starttime="20160906 15:38:12.231"></status>
+</suite>
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product2\API\FeatureTwo.robot" id="s1-s3-s1-s2" name="FeatureTwo">
+<test id="s1-s3-s1-s2-t1" name="Test case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 1 of API feature 2</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.242" level="INFO">I am test case 1 of API feature 2</msg>
+<status status="PASS" endtime="20160906 15:38:12.242" starttime="20160906 15:38:12.242"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.242" critical="yes" starttime="20160906 15:38:12.241"></status>
+</test>
+<test id="s1-s3-s1-s2-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 2 of API feature 2</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.244" level="INFO">I am test case 2 of API feature 2</msg>
+<status status="PASS" endtime="20160906 15:38:12.244" starttime="20160906 15:38:12.244"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.244" critical="yes" starttime="20160906 15:38:12.243"></status>
+</test>
+<status status="PASS" endtime="20160906 15:38:12.246" starttime="20160906 15:38:12.239"></status>
+</suite>
+<status status="PASS" endtime="20160906 15:38:12.247" starttime="20160906 15:38:12.230"></status>
+</suite>
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product2\Web" id="s1-s3-s2" name="Web">
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product2\Web\FeatureOne.robot" id="s1-s3-s2-s1" name="FeatureOne">
+<test id="s1-s3-s2-s1-t1" name="Test case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 1 of Web feature 1</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.264" level="INFO">I am test case 1 of Web feature 1</msg>
+<status status="PASS" endtime="20160906 15:38:12.264" starttime="20160906 15:38:12.263"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.265" critical="yes" starttime="20160906 15:38:12.256"></status>
+</test>
+<test id="s1-s3-s2-s1-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 2 of Web feature 1</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.267" level="INFO">I am test case 2 of Web feature 1</msg>
+<status status="PASS" endtime="20160906 15:38:12.268" starttime="20160906 15:38:12.267"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.268" critical="yes" starttime="20160906 15:38:12.266"></status>
+</test>
+<status status="PASS" endtime="20160906 15:38:12.271" starttime="20160906 15:38:12.252"></status>
+</suite>
+<suite source="C:\Users\vkurochkin\Desktop\development\robotframework\demo\tests\Product2\Web\FeatureTwo.robot" id="s1-s3-s2-s2" name="FeatureTwo">
+<test id="s1-s3-s2-s2-t1" name="Test case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 1 of Web feature 2</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.280" level="INFO">I am test case 1 of Web feature 2</msg>
+<status status="PASS" endtime="20160906 15:38:12.280" starttime="20160906 15:38:12.279"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.280" critical="yes" starttime="20160906 15:38:12.277"></status>
+</test>
+<test id="s1-s3-s2-s2-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am test case 2 of Web feature 2</arg>
+</arguments>
+<msg timestamp="20160906 15:38:12.283" level="INFO">I am test case 2 of Web feature 2</msg>
+<status status="PASS" endtime="20160906 15:38:12.283" starttime="20160906 15:38:12.283"></status>
+</kw>
+<status status="PASS" endtime="20160906 15:38:12.283" critical="yes" starttime="20160906 15:38:12.282"></status>
+</test>
+<status status="PASS" endtime="20160906 15:38:12.284" starttime="20160906 15:38:12.274"></status>
+</suite>
+<status status="PASS" endtime="20160906 15:38:12.285" starttime="20160906 15:38:12.249"></status>
+</suite>
+<status status="PASS" endtime="20160906 15:38:12.287" starttime="20160906 15:38:12.228"></status>
+</suite>
+<status status="FAIL" endtime="20160906 15:38:12.290" starttime="20160906 15:37:02.681"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="1" pass="16">Critical Tests</stat>
+<stat fail="1" pass="16">All Tests</stat>
 </total>
 <tag>
 <stat fail="1" pass="0">Smoke</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Amazon" pass="0">Amazon</stat>
+<stat fail="1" id="s1" name="Tests" pass="16">Tests</stat>
+<stat fail="1" id="s1-s1" name="Amazon" pass="0">Tests.Amazon</stat>
+<stat fail="0" id="s1-s2" name="Product1" pass="8">Tests.Product1</stat>
+<stat fail="0" id="s1-s2-s1" name="API" pass="4">Tests.Product1.API</stat>
+<stat fail="0" id="s1-s2-s1-s1" name="FeatureOne" pass="2">Tests.Product1.API.FeatureOne</stat>
+<stat fail="0" id="s1-s2-s1-s2" name="FeatureTwo" pass="2">Tests.Product1.API.FeatureTwo</stat>
+<stat fail="0" id="s1-s2-s2" name="Web" pass="4">Tests.Product1.Web</stat>
+<stat fail="0" id="s1-s2-s2-s1" name="FeatureOne" pass="2">Tests.Product1.Web.FeatureOne</stat>
+<stat fail="0" id="s1-s2-s2-s2" name="FeatureTwo" pass="2">Tests.Product1.Web.FeatureTwo</stat>
+<stat fail="0" id="s1-s3" name="Product2" pass="8">Tests.Product2</stat>
+<stat fail="0" id="s1-s3-s1" name="API" pass="4">Tests.Product2.API</stat>
+<stat fail="0" id="s1-s3-s1-s1" name="FeatureOne" pass="2">Tests.Product2.API.FeatureOne</stat>
+<stat fail="0" id="s1-s3-s1-s2" name="FeatureTwo" pass="2">Tests.Product2.API.FeatureTwo</stat>
+<stat fail="0" id="s1-s3-s2" name="Web" pass="4">Tests.Product2.Web</stat>
+<stat fail="0" id="s1-s3-s2-s1" name="FeatureOne" pass="2">Tests.Product2.Web.FeatureOne</stat>
+<stat fail="0" id="s1-s3-s2-s2" name="FeatureTwo" pass="2">Tests.Product2.Web.FeatureTwo</stat>
 </suite>
 </statistics>
 <errors>
